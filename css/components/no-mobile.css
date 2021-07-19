@@ -23,10 +23,8 @@
   }
 }
 
-@media screen and (max-width: 645px) {
-  #no-mobile {
+@media screen and (orientation: portrait) {
+  #landscape {
     display: none;
   }
 }
-
-/* 가로모드 안되는거 함 만들어 보길.. git 올리고..*/
