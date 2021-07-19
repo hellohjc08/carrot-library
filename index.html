@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Welcome to Carrot Library</title>
+</head>
+<body>
+    <div class="status-bar">
+        <div class="status-bar__column">
+            <span>No Service</span>
+            <i class="fas fa-wifi"></i>
+        </div>
+        <div class="status-bar__column">
+            <span>18:43</span>
+        </div>
+        <div class="status-bar__column">
+            <span>100%</span>
+            <i class="fas fa-battery-full fa-lg"></i>
+            <i class="fas fa-bolt"></i>
+        </div>
+    </div>
+
+    <header class="welcome-header">
+        <h1 class="welcome-header__title">당신 근처의, 도서관 <i class="fas fa-carrot"></i></h1>
+        <p class="welcome-header__text">If you have a Carrot Account,<br>
+        log in wtih your email or phone number</p>
+    </header>
+
+    <form action="friends.html" method="get" class="login-form">
+        <input class="login-form__id" type="text" required placeholder="Email or phone number">
+        <input class="login-form__pw" type="password" required placeholder="Password">
+        <input class="login-form__login" type="submit" value="Log In">
+        <input class="login-form__sign" type="submit" value="Sign up">
+        <a href="#">Find carrot Account or Password</a>
+    </form>
+
+    <div id="no-mobile">
+        <span>If you want to join us, <br> Shake your carrot <i class="fas fa-carrot"></i>  <br><br>or<br><br> Reduce your screen size :)
+        </span>
+    </div>
+
+    <script src="https://kit.fontawesome.com/7327cf381d.js" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Chat - Carrot Library</title>
+</head>
+<body>
+    <div class="status-bar">
+        <div class="status-bar__column">
+            <span>No Service</span>
+            <i class="fas fa-wifi"></i>
+        </div>
+        <div class="status-bar__column">
+            <span>18:43</span>
+        </div>
+        <div class="status-bar__column">
+            <span>100%</span>
+            <i class="fas fa-battery-full fa-lg"></i>
+            <i class="fas fa-bolt"></i>
+        </div>
+    </div>
+    
+    <header class=screen-header>
+        <h1 class=screen-header__title>채팅</h1>
+        <div class="screen-header__icons">
+            <span><i class="fas fa-search fa-lg"></i></span>
+            <span><i class="far fa-comment-dots fa-lg"></i></span>
+            <span><i class="fas fa-music fa-lg"></i></span>
+            <span><a href="settings.html">
+                <span class="noti-badge"></span>
+                <i class="fas fa-cog fa-lg"></i></a></span>
+        </div>
+    </header>
+
+    <main class="main-screen">
+        <a href="chat2.html">
+            <div class="user-component">
+                <div class="user-component__column">
+                    <img class="user-component__avatar" src="data:image/png;base64,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" />
+                    <div class="user-component__text">
+                      <h4 class="user-component__title">Shark</h4>
+                      <h6 class="user-component__subtitle">혹시 교환 가능하신가요?</h6>
+                    </div>
+                </div>
+                <div class="user-component__column">
+                    <span class=user-component__time>13:08</span>
+                    <div class="badge">2</div>
+                </div>
+            </div>
+        </a>
+
+        <a href="chat1.html">
+            <div class="user-component">
+                <div class="user-component__column">
+                    <img class="user-component__avatar" src="https://w.namu.la/s/e333e0887c17ef96c77da7c2c9b49e9d342b02f01994851f69870be0bc786b1c1757e80f7e7dd00a5a99ec605b11e55ff7a3f20867b612ecccb493f4b68112dc01d4613c11b0ea0a80ad6b9267ed460e08d08333ddd7385dddabc739db7a58fd" />
+                    <div class="user-component__text">
+                      <h4 class="user-component__title">당근도서관</h4>
+                      <h6 class="user-component__subtitle">궁금하신 게 있다면, 말씀해주세요!</h6>
+                    </div>
+                </div>
+                <div class="user-component__column">
+                    <span class=user-component__time>08:22</span>
+                    <div class="badge">2</div>
+                </div>
+            </div>
+        </a>
+
+    </main>
+    
+
+    <nav class="nav">
+        <ul class="nav__list">
+            <li class="nav__btn">
+                <a class="nav__link" href="friends.html"><i class="far fa-user fa-2x"></i></a>
+            </li>
+            <li class="nav__btn">
+                <a class="nav__link" href="chats.html">
+                    <span class="nav__noti badge">4</span>
+                <i class="fas fa-comment fa-2x"></i></a>
+            </li>
+            <li class="nav__btn">
+                <a class="nav__link" href="find2.html"><i class="fas fa-search fa-2x"></i></a>
+            </li>
+            <li class="nav__btn">
+                <a class="nav__link" href="more.html">
+                    <span class="noti-badge"></span>    
+                <i class="fas fa-ellipsis-h fa-2x"></i></a>
+            </li>
+        </ul>
+    </nav>
+
+    <div id="no-mobile">
+        <span>If you want to join us, <br> Shake your carrot <i class="fas fa-carrot"></i>  <br><br>or<br><br> Reduce your screen size :)
+        </span>
+    </div>
+
+    <script src="https://kit.fontawesome.com/7327cf381d.js" crossorigin="anonymous"></script>
+</body>
+</html>

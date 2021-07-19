@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>My Carrot - Carrot Library</title>
+</head>
+<body>
+    <div class="status-bar">
+        <div class="status-bar__column">
+            <span>No Service</span>
+            <i class="fas fa-wifi"></i>
+        </div>
+        <div class="status-bar__column">
+            <span>18:43</span>
+        </div>
+        <div class="status-bar__column">
+            <span>100%</span>
+            <i class="fas fa-battery-full fa-lg"></i>
+            <i class="fas fa-bolt"></i>
+        </div>
+    </div>
+    
+    <header class=screen-header>
+        <h1 class=screen-header__title>나의 당근도서관</h1>
+        <div class="screen-header__icons">
+            <span><i class="fas fa-search fa-lg"></i></span>
+            <span><i class="fas fa-music fa-lg"></i></span>
+            <span><a href="settings.html">
+                <span class="noti-badge"></span>
+                <i class="fas fa-cog fa-lg"></i></a></span>
+                        <!-- 여기 고쳐야 됨 6.21 댓글확인-->
+        </div>
+    </header>
+
+    <main class="main-screen">
+        <div class="user-component">
+            <div class="user-component__column">
+                <img class="user-component__avatar user-component__avatar--xl" src="data:image/png;base64,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" />
+                <div class="user-component__text">
+                  <h4 class="user-component__title">Whale</h4>
+                  <div class="user-component__subt">
+                    <h6 class="user-component__subtitle">+82 010-1234-5678</h6>
+                    <div class="user-component__subti"><i class="fas fa-exclamation"></i></div>
+                  </div>
+                </div>
+            </div>
+            <div class="user-component__column">
+                <i class="far fa-comment-alt fa-2x"></i>
+            </div>
+        </div>
+        <div class="icon-row more-screen">
+            <div class="icon-row__icon">
+                <i class="far fa-calendar-check"></i>
+                <span>Calender</span>
+            </div>
+            <div class="icon-row__icon">
+                <i class="far fa-smile"></i>
+                <span>Emoticons</span>
+            </div>
+            <div class="icon-row__icon">
+                <i class="fas fa-brush"></i>
+                <span>Theme</span>
+            </div>
+            <div class="icon-row__icon">
+                <i class="fas fa-file-invoice-dollar"></i>
+                <span>Account</span>
+            </div>
+        </div>
+        <div class="more-suggestions">
+            <h4 class="more-suggestions__title">Sugesstion</h4>
+            <div class="more-suggestions__icons">
+                <div class="more-suggestions__icon">
+                    <div class="more-suggestions__icon-image">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <span class="more-suggestions__icon-text">동네인증</span>
+                </div>
+                <div class="more-suggestions__icon">
+                    <div class="more-suggestions__icon-image">
+                        <i class="fas fa-book-reader"></i>
+                    </div>
+                    <span class="more-suggestions__icon-text">관심도서관</span>
+                </div>
+                <div class="more-suggestions__icon">
+                    <div class="more-suggestions__icon-image">
+                        <i class="fas fa-sync"></i>
+                    </div>
+                    <span class="more-suggestions__icon-text">교환내역</span>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+
+    <nav class="nav">
+        <ul class="nav__list">
+            <li class="nav__btn">
+                <a class="nav__link" href="friends.html"><i class="far fa-user fa-2x"></i></a>
+            </li>
+            <li class="nav__btn">
+                <a class="nav__link" href="chats.html">
+                    <span class="nav__noti badge">3</span>
+                <i class="far fa-comment fa-2x"></i></a>
+            </li>
+            <li class="nav__btn">
+                <a class="nav__link" href="find2.html"><i class="fas fa-search fa-2x"></i></a>
+            </li>
+            <li class="nav__btn">
+                <a class="nav__link" href="more.html">
+                    <span class="noti-badge"></span>    
+                <i class="fas fa-ellipsis-h fa-2x"></i></a>
+            </li>
+        </ul>
+    </nav>
+
+    <div id="no-mobile">
+        <span>If you want to join us, <br> Shake your carrot <i class="fas fa-carrot"></i>  <br><br>or<br><br> Reduce your screen size :)
+        </span>
+    </div>
+    
+    <script src="https://kit.fontawesome.com/7327cf381d.js" crossorigin="anonymous"></script>
+</body>
+</html>

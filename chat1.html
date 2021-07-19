@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Ctat w Carrot Manager - KoKoa Clone</title>
+</head>
+<body id="chat-screen">
+    <div class="status-bar chat-status-bar">
+        <div class="status-bar__column">
+            <span>No Service</span>
+            <i class="fas fa-wifi"></i>
+        </div>
+        <div class="status-bar__column">
+            <span>18:43</span>
+        </div>
+        <div class="status-bar__column">
+            <span>100%</span>
+            <i class="fas fa-battery-full fa-lg"></i>
+            <i class="fas fa-bolt"></i>
+        </div>
+    </div>
+    
+<header class="alt-header">
+    <div class="alt-header__column">
+        <a href="chats.html"> <i class="fas fa-chevron-left fa-lg"></i></a>
+    </div>
+    <div class="alt-header__column">
+        <h1 class="alt-header__title">당근도서관</h1>
+    </div>
+    <div class="alt-header__column">
+        <span><i class="fas fa-search fa-lg"></i></span>
+        <span><i class="fas fa-bars fa-lg"></i></span>
+    </div>
+</header>
+
+    <main class="main-screen main-chat">
+        <div class="chat__timestamp">
+            Monday, July 19, 2021
+        </div>
+        
+        <div class="message-row message-in">
+            <img src="https://w.namu.la/s/e333e0887c17ef96c77da7c2c9b49e9d342b02f01994851f69870be0bc786b1c1757e80f7e7dd00a5a99ec605b11e55ff7a3f20867b612ecccb493f4b68112dc01d4613c11b0ea0a80ad6b9267ed460e08d08333ddd7385dddabc739db7a58fd">
+            <div class="message-row__content">
+                <span class="message__author">당근도서관</span>
+                <div class="message__info">
+                    <span class="message__bubble">안녕하세요, 당근도서관입니다♥</span>
+                    <span class="message__time">08:22</span>
+                </div>
+            </div>
+        </div>
+        <div class="message-row message-in">
+            <img src="https://w.namu.la/s/e333e0887c17ef96c77da7c2c9b49e9d342b02f01994851f69870be0bc786b1c1757e80f7e7dd00a5a99ec605b11e55ff7a3f20867b612ecccb493f4b68112dc01d4613c11b0ea0a80ad6b9267ed460e08d08333ddd7385dddabc739db7a58fd">
+            <div class="message-row__content">
+                <span class="message__author">당근도서관</span>
+                <div class="message__info">
+                    <span class="message__bubble">궁금하신 게 있다면, 말씀해주세요!</span>
+                    <span class="message__time">08:23</span>
+                </div>
+            </div>
+        </div>
+        <div id="why" class="message-row message-row--own">
+            <div class="message-row__content">
+                <div class="message__info">
+                    <span class="message__bubble">안녕하세요!</span>
+                    <span class="message__time">08:43</span>
+                </div>
+            </div>
+        </div>
+        <div class="message-row message-row--own">
+            <div class="message-row__content">
+                <div class="message__info">
+                    <span class="message__bubble">네, 감사합니다!</span>
+                    <span class="message__time">08:43</span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <form class="reply">
+        <div class="reply__column">
+            <i class="far fa-plus-square fa-lg"></i>
+        </div>
+        <div class="reply__column">
+            <input type="text" placeholder="Write a message...">
+            <i class="far fa-smile-wink fa-lg"></i>
+            <button>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+        </div>
+    </form>
+
+    <div id="no-mobile">
+        <span>If you want to join us, <br> Shake your carrot <i class="fas fa-carrot"></i>  <br><br>or<br><br> Reduce your screen size :)
+        </span>
+    </div>
+    
+    <script src="https://kit.fontawesome.com/7327cf381d.js" crossorigin="anonymous"></script>
+</body>
+</html>

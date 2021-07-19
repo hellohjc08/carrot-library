@@ -1,0 +1,62 @@
+.settings__setting {
+  padding: 20px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.settings__setting i {
+  margin-right: 25px;
+  font-size: 20px;
+  opacity: 0.8;
+}
+
+.settings__setting-column:last-child {
+  color: var(--main-gray);
+}
+.settings-main-screen {
+  margin-top: 70px;
+}
+
+@keyframes colorAnimation {
+  from {
+    opacity: 0.8;
+  }
+  to {
+    opacity: 1;
+    color: var(--carrot);
+  }
+}
+
+.settings__setting:hover {
+  animation: colorAnimation 0.5s ease-in-out forwards;
+}
+
+@keyframes colorAnimation2 {
+  from {
+    opacity: 0.2;
+  }
+  to {
+    opacity: 0.5;
+    color: var(--carrot);
+  }
+}
+
+.settings__setting:hover .settings__setting-column:last-child {
+  animation: colorAnimation2 0.5s ease-in-out forwards;
+}
+
+@keyframes rotateAnimation {
+  from {
+    transform: 0;
+  }
+  to {
+    transform: rotate(-45deg);
+  }
+}
+
+.settings__setting:hover i {
+  animation: rotateAnimation 0.3s ease-in-out forwards;
+}
